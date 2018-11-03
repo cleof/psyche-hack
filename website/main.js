@@ -1,3 +1,12 @@
+function onLoad() {
+
+  // Data should be updated with 20 most common names
+
+  for (var key in data.names) {
+    $('#myDropdown').append('<a href="#">'+data.names[key]+'</a>')
+  }
+}
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -17,4 +26,6 @@ function filterFunction() {
       a[i].style.display = "none";
     }
   }
+
+
 }
